@@ -27,4 +27,54 @@ body {
   color: white;
   border-color: #388e3c;
 }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe6f0;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #d63384;
+}
+
+.malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ramo {
+  background-color: #f8d7da;
+  border: 2px solid #f5c6cb;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #721c24;
+  font-weight: bold;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.ramo:hover {
+  background-color: #f5c6cb;
+}
+
+.ramo.aprobado {
+  background-color: #d63384;
+  color: white;
+  border-color: #b71c5a;
+  text-decoration: line-through;
+}
+
+.ramo.bloqueado {
+  background-color: #f0f0f0;
+  color: #aaa;
+  border-color: #ddd;
+  cursor: not-allowed;
+  pointer-events: none;
+}
 
